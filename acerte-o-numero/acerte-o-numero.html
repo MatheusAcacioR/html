@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acerte o número</title>
+</head>
+<body>
+    <div>
+        <h1>Você consegue adivinhar o número?</h1>
+        <input id="palpite" type="number" placeholder="De um palpite de um número">
+        <button onclick="playgame()">Resultado</button>
+    </div>
+
+    <div id="ran">sem número</div>
+
+    <script>
+        var maquina = Math.floor(Math.random() * 11)
+        var tentativa = 0
+        function playgame() {
+            do {
+                var palpite = document.querySelector("input#palpite").value
+                var ran = document.querySelector("div#ran")
+                tentativa += 1
+                if (palpite == maquina) {
+                    ran.innerHTML = `Parabens vc acertou....Suas tentativas:${tentativa}`
+                } else if (palpite < maquina) {
+                    ran.innerHTML = `Chute um valor maior`
+                } else {
+                    ran.innerHTML = `Chute um valor menor`
+                }
+            } while (palpite != maquina)
+        }
+    </script>
+</body>
+</html>
