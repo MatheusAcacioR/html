@@ -10,25 +10,27 @@
     <div>
         <h1>Você consegue adivinhar o número?</h1>
         <input id="palpite" type="number" placeholder="De um palpite de um número">
-        <button onclick="playgame()">Resultado</button>
+        <button onclick="PlayGame()">Resultado</button>
     </div>
 
     <div id="ran">sem número</div>
 
     <script>
-        var maquina = Math.floor(Math.random() * 11)
+        var maquina = Math.random() * 11
         var tentativa = 0
-        function playgame() {
+        function PlayGame() {
+            var ran = document.querySelector("div#ran")
+            var palpite = document.querySelector("input#palpite").value
             do {
-                var palpite = document.querySelector("input#palpite").value
-                var ran = document.querySelector("div#ran")
-                tentativa += 1
                 if (palpite == maquina) {
+                    tentativa += 1
                     ran.innerHTML = `Parabens vc acertou....Suas tentativas:${tentativa}`
                 } else if (palpite < maquina) {
-                    ran.innerHTML = `Chute um valor maior`
+                    tentativa += 1
+                    ran.innerHTML = 'Chute um valor maior'
                 } else {
-                    ran.innerHTML = `Chute um valor menor`
+                    tentativa += 1
+                    ran.innerHTML = 'Chute um valor menor'
                 }
             } while (palpite != maquina)
         }
