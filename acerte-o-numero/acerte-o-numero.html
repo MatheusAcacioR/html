@@ -24,6 +24,8 @@
             var dica = document.querySelector("div#dica")
 
             while (palpite != maquina) {
+                var palpite = document.querySelector("input#palpite").value
+                var dica = document.querySelector("div#dica")
                 tentativa += 1
                 if (palpite == maquina) {
                     dica.innerHTML = `Parabens vc acertou....Suas tentativas:${tentativa}`
