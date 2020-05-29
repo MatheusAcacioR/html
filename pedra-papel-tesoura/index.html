@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra Papel Tesoura</title>
-    <style>
-        table, th, td {
-            border: black 1px solid;
-            border-spacing: 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Tente vencer o computador</h1>
-    <p>Escolha uma jogada</p>
+    <header>
+        <h1>Tente vencer o computador</h1>
+    </header>
+    <section>
+        <p>Escolha uma jogada</p>
+        <p id="escolha-oponente">Escolha do oponente</p>
+        <img id="imagem-jogador">
+        <img id="imagem-oponente">
+        <br>
 
-    <button id="pedra" onclick="PlayPedra()">Pedra</button>
-    <button id="papel" onclick="PlayPapel()">Papel</button>
-    <button id="tesoura" onclick="PlayTesoura()">Tesoura</button>
+        <button class="escolhas" id="pedra" onclick="PlayPedra()">Pedra</button>
+        <button class="escolhas" id="papel" onclick="PlayPapel()">Papel</button>
+        <button class="escolhas" id="tesoura" onclick="PlayTesoura()">Tesoura</button>
 
-    <p id="usuario"></p>
-    <p id="maquina"></p>
-    <p id="resultado"></p>
+        <p id="resultado"></p>
 
-    <table>
-        <caption>Placar</caption>
-
-        <tr>
-            <th>Você</th>
-            <th>PC</th>
-        </tr>
-
-        <tr>
-            <td id="placarjogador">0</td>
-            <td id="placarmaquina">0</td>
-        </tr>
-
-    </table>
-
+    </section>
+    <div>
+        <table>
+            <caption>Placar</caption>
+    
+            <tr>
+                <th>Você</th>
+                <th>PC</th>
+            </tr>
+    
+            <tr>
+                <td id="placarjogador">0</td>
+                <td id="placarmaquina">0</td>
+            </tr>
+    
+        </table>
+    </div>
     <script src="script.js">
     </script>
 </body>
