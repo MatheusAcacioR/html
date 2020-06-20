@@ -127,9 +127,43 @@ section div#recipe p {
 
 div#more {
     position: relative;
-    left: 1250px;
+    left: 1150px;
+    bottom: 1480px;
     right: 0px;
-    width: 200px;
+    width: 300px;
+}
+
+section div#more h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#slider img {
+    border: 5px solid black;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -330px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider p#creme {
+    position: absolute;
+    right: -30px;
+    bottom: -665px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider img.selected {
+    opacity: 1;
 }
 
 footer#rodape {
@@ -153,7 +187,9 @@ footer#rodape p {
 /* Modal */
 
 #modal {
-    background: #11108c;
+    background-image: url("image/Café-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -171,7 +207,7 @@ footer#rodape p {
 #modal .content {
     margin-top: 5%;
     /*margin-top: 128px;*/
-    color: white;
+    color: black;
 }
 
 #modal .content h1 {
@@ -200,7 +236,7 @@ form input {
     padding: 12px;
     box-sizing: border-box; /* Quando colocamos o box-sizing: border-box; ele faz com que os 12px dos padding estejam dentro dos 100%                          do width, fazendo com que não ultrapasse a borda e estrapole um item em cima do outro*/
     border-radius: 6px;
-    border: 1px solid #ff0000;
+    border: 1px solid rgba(0,0,0,0.5);
     outline: none;
     font-size: 16px;
 }
@@ -214,7 +250,7 @@ form label {
 form a {
     width: 150px;
     height: 40px;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(0,0,0, 1);
     color: white;
     display: flex;
     align-items: center;
@@ -228,13 +264,13 @@ form a {
 }
 
 form a:hover {
-    background-color: #c4c4c4;
-    color: #ff0000;
+    background-color: #492905;
+    color: white;
     text-decoration: none;
 }
 
 form button {
-    background: rgba(255,255,255, 0.1);
+    background: rgba(0,0,0,1);
     color: white;
     font-size: 14px;
     font-weight: bold;
