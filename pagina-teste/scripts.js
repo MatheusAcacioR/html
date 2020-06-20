@@ -47,7 +47,7 @@ let time = 2000,
     images = document.querySelectorAll("#slider-creme img")
     imagesMousse = document.querySelectorAll("#slider-mousse img")
     imagesBrownie = document.querySelectorAll("#slider-brownie img")
-    imagesBolo = document.querySelectorAll("#slider-bolo img")
+    // imagesBolo = document.querySelectorAll("#slider-bolo img")
     max = images.length;
 
 function nextImage() {
@@ -55,7 +55,7 @@ function nextImage() {
     images[currentImageIndex].classList.remove("selected-creme")
     imagesMousse[currentImageIndex].classList.remove("selected-mousse")
     imagesBrownie[currentImageIndex].classList.remove("selected-brownie")
-    imagesBolo[currentImageIndex].classList.remove("selected-bolo")
+    // imagesBolo[currentImageIndex].classList.remove("selected-bolo")
 
     currentImageIndex++
 
@@ -66,7 +66,7 @@ function nextImage() {
     images[currentImageIndex].classList.add("selected-creme")
     imagesMousse[currentImageIndex].classList.add("selected-mousse")
     imagesBrownie[currentImageIndex].classList.add("selected-brownie")
-    imagesBolo[currentImageIndex].classList.add("selected-bolo")
+    // imagesBolo[currentImageIndex].classList.add("selected-bolo")
 }
 
 function start() {
