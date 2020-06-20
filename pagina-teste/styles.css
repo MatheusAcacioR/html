@@ -57,6 +57,7 @@ nav ul button#button {
     font-weight: 700;
     text-transform: uppercase;
     padding: 40px;
+    outline: none;
 }
 
 nav ul li a {
