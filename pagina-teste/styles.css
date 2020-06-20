@@ -139,8 +139,10 @@ section div#more h1 {
     font-weight: bold;
 }
 
-#slider img {
-    border: 5px solid black;
+/* Inicio barra lateral*/
+
+#slider-creme img {
+    border: 1px solid #492905;
     opacity: 0;
     position: absolute;
     right: 10px;
@@ -151,7 +153,7 @@ section div#more h1 {
     object-fit: cover;
 }
 
-#slider p#creme {
+#slider-creme p#creme {
     position: absolute;
     right: -30px;
     bottom: -665px;
@@ -162,9 +164,94 @@ section div#more h1 {
     color: black;
 }
 
-#slider img.selected {
+#slider-creme img.selected-creme {
     opacity: 1;
 }
+
+#slider-mousse img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -680px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-mousse p#mousse {
+    position: absolute;
+    right: -30px;
+    bottom: -1010px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-mousse img.selected-mousse {
+    opacity: 1;
+}
+
+#slider-brownie img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1025px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-brownie p#brownie {
+    position: absolute;
+    right: -30px;
+    bottom: -1355px;
+    width: 300px;
+    height: 300px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-brownie img.selected-brownie {
+    opacity: 1;
+}
+
+#slider-bolo img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1370px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-bolo p#bolo {
+    position: absolute;
+    right: -30px;
+    bottom: -1700px;
+    width: 300px;
+    height: 300px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-bolo img.selected-bolo {
+    opacity: 1;
+}
+
+/* Fim barra lateral*/
 
 footer#rodape {
     position: relative;
@@ -187,7 +274,7 @@ footer#rodape p {
 /* Modal */
 
 #modal {
-    background-image: url("image/Café-01.jpg");
+    background-image: url("image/Café-03.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: fixed;
@@ -286,8 +373,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #c4c4c4;
-    color: #ff0000;
+    background-color: #492905;
+    color: white;
     text-decoration: none;
 }
 
