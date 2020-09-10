@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Break</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="logo-image">
+           <a href="index.html"><img id="logo-cafe" src="image/logo-nova.png" alt="logo café"></a>
+        </div>
+        <nav id="navegação">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/cafe.html">História</a></li>
+                <li><a href="html/receitas.html">Receitas</a></li>
+                <button id="button" onclick="onOff()">Contacte-nos</button>
+            </ul>
+        </nav>
+    </div>
+    <section id="corpo">
+        <img src="image/Café-02.jpg" alt="">
+        <div id="welcome">
+            <h1>Bem vindo ao Coffe Break</h1>
+            <p>Encontre informações sobre o café.</p>
+        </div>
+        <img src="image/Café-04.jpg" alt="">
+        <div id="recipe">
+            <h1>Expanda suas possibilidades</h1>
+            <p>Descubra as melhores receitas com café.</p>
+        </div>
+
+        <div id="more">
+            <h1>Veja novas receitas</h1>
+            <a href="html/receitas.html"><div id="slider-creme">
+                <img class="selected-creme" src="image/creme-1.jpeg" alt="Image1">
+                <img src="image/creme-2.jpg" alt="Image2">
+                <img src="image/creme-3.jpg" alt="Image3">
+                <img src="image/creme-4.jpg" alt="Image4">
+                <p id="creme">Creme de Café</p></a>
+            </div>
+
+            <a href="html/receitas.html"><div id="slider-mousse">
+                <img class="selected-mousse" src="image/mousse-1.jpg" alt="Image1">
+                <img src="image/mousse-2.jpg" alt="Image2">
+                <img src="image/mousse-3.jpg" alt="Image3">
+                <img src="image/mousse-4.jpg" alt="Image4">
+                <p id="mousse">Mousse de Café</p></a>
+            </div>
+
+            <a href="html/receitas.html"><div id="slider-brownie">
+                <img class="selected-brownie" src="image/brownie-1.jpg" alt="Image1">
+                <img src="image/brownie-2.jpg" alt="Image2">
+                <img src="image/brownie-3.jpg" alt="Image3">
+                <img src="image/brownie-4.jpg" alt="Image4">
+                <p id="brownie">Brownie de café</p></a>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p id="footer"></p>
+    </footer>
+    <!-- Modal -->
+                <div id="modal" class="hide">
+                <div class="content">
+                    <h1>Nos ajude a colocar novos conteúdos na página</h1>
+
+                    <form action="">
+                        <div class="input-wrapper">
+                            <label for="title">Título*</label>
+                            <input required type="text" name="title">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="category">Categoria*</label>
+                            <input required type="text" name="category">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição*</label>
+                            <textarea required name="description" cols="30" rows="10"></textarea>
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="link">Link do conteúdo (Caso já exista o conteúdo em algum lugar da web)</label>
+                            <input type="url" name="image">
+                            <span class="error"></span>
+                        </div>
+
+                        <a href="#" onclick="onOff()">Voltar</a>
+                        <button type="submit" id="modal-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+</body>
+</html>

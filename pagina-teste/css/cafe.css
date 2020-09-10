@@ -1,0 +1,20 @@
+#texto{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(92, 45, 13);
+    padding: 10px;
+}
+
+#texto1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(92, 45, 13);
+    padding: 10px;
+}
+
+.img{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    border: 12px red;
+}

@@ -1,0 +1,385 @@
+body { 
+   font-family: "Ubuntu", sans-serif;    
+   margin: 0 auto;
+   background-image: url("image/Café-01.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+}
+
+img#fundo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+}
+
+div#cabecalho {
+    width: 1500px;
+    height: 80px;
+    margin: 0 auto;
+	background-color: rgba(221, 217, 206, 1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+}
+
+/*div div#logo-image {
+    position: relative;
+    left: 0px;
+    top: 20px;
+    width: 100px;
+}*/
+
+img#logo-cafe {
+    position: relative;
+    left: 100px;
+    top: 20px;
+    width: 240px;
+
+}
+
+nav ul {
+    position: relative;
+    left: 380px;
+    bottom: 55px;
+	width: 1000px;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul button#button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px;
+    outline: none;
+}
+
+nav ul li a {
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+    padding: 2px 70px;
+    display: inline-block; 
+}
+
+section {
+    background-color: #ddd9ce;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+section img {
+    margin: 10px 0px 0px 70px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+div#welcome {
+    position: relative;
+    bottom: 370px;
+    left: 90px;
+}
+
+section div#welcome h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+section div#welcome p {
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div#recipe {
+    position: relative;
+    bottom: 370px;
+    left: 190px;
+    color: #c4c4c4
+}
+
+section div#recipe h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 80px;
+}
+
+section div#recipe p {
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div#more {
+    position: relative;
+    left: 1150px;
+    bottom: 1480px;
+    right: 0px;
+    width: 300px;
+}
+
+section div#more h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Inicio barra lateral*/
+
+#slider-creme img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -330px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-creme p#creme {
+    position: absolute;
+    right: -30px;
+    bottom: -665px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-creme img.selected-creme {
+    opacity: 1;
+}
+
+#slider-mousse img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -680px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-mousse p#mousse {
+    position: absolute;
+    right: -30px;
+    bottom: -1010px;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-mousse img.selected-mousse {
+    opacity: 1;
+}
+
+#slider-brownie img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1025px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-brownie p#brownie {
+    position: absolute;
+    right: -30px;
+    bottom: -1355px;
+    width: 300px;
+    height: 300px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-brownie img.selected-brownie {
+    opacity: 1;
+}
+
+/*#slider-bolo img {
+    border: 1px solid #492905;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: -1370px;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2000ms;
+    object-fit: cover;
+}
+
+#slider-bolo p#bolo {
+    position: absolute;
+    right: -30px;
+    bottom: -1700px;
+    width: 300px;
+    height: 300px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#slider-bolo img.selected-bolo {
+    opacity: 1;
+}*/
+
+/* Fim barra lateral*/
+
+footer#rodape {
+    position: relative;
+    margin: 20px auto;
+    padding: 30px 0px;
+    background-color: #492905;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    width: 1500px;
+    height: 10px;
+    color: #FFF;
+}
+
+footer#rodape p {
+    position: relative;
+    bottom: 18px;
+    left: 570px;
+}
+
+/* Modal */
+
+#modal {
+    background-image: url("image/Café-03.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+}
+
+#modal.addScroll {
+    overflow: auto;
+}
+
+#modal .content {
+    margin-top: 5%;
+    /*margin-top: 128px;*/
+    color: black;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form textarea,
+form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box; /* Quando colocamos o box-sizing: border-box; ele faz com que os 12px dos padding estejam dentro dos 100%                          do width, fazendo com que não ultrapasse a borda e estrapole um item em cima do outro*/
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form a {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(0,0,0, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    align-self: end;
+    transition: 400ms;
+    text-decoration: none;
+}
+
+form a:hover {
+    background-color: #492905;
+    color: white;
+    text-decoration: none;
+}
+
+form button {
+    background: rgba(0,0,0,1);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    border: none;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #492905;
+    color: white;
+    text-decoration: none;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
