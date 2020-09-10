@@ -9,30 +9,36 @@
 <body>
     <div>
         <h1>Você consegue adivinhar o número?</h1>
-        <input id="palpite" type="number" placeholder="De um palpite de um número">
-        <button onclick="PlayGame()">Resultado</button>
+        <div id="tudo">
+            <input id="palpite" type="number" placeholder="De um palpite de um número">
+            <button onclick="PlayGame()">Resultado</button>
+        </div>
     </div>
 
     <div id="dica">Dê um palpite de um número e veja se você acertou</div>
 
     <script>
-        var maquina = Math.random() * 11
+        var maquina = Math.floor(Math.random() * 10 + 1)
         var tentativa = 0
         
         function PlayGame() {
             var palpite = document.querySelector("input#palpite").value
             var dica = document.querySelector("div#dica")
+            var tudo = document.getElementById("tudo")
 
-            while (palpite != maquina) {
+            if (palpite != maquina) {
                 tentativa += 1
-                if (palpite == maquina) {
-                    dica.innerHTML = `Parabens vc acertou....Suas tentativas:${tentativa}`
-                } else if (palpite < maquina) {
+                if (palpite < maquina) {
                     dica.innerHTML = 'Chute um valor maior'
                 } else {
                     dica.innerHTML = 'Chute um valor menor'
                 }
-            } 
+            } else {
+                tentativa += 1
+                dica.innerHTML = `Parabens!!! Você acertou!!!.....Suas tentativas: ${tentativa}`
+                tudo.innerHTML = 'Acertou'
+
+            }
         }
     </script>
 </body>
